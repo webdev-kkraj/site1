@@ -65,7 +65,7 @@ Vokalia and Consonantia.</p>
             <div class="client-twosection">
                 <div class="row">
                     <div class="col-md-6 col-12">
-                        <img src="http://localhost/site1/wp-content/uploads/2025/01/Service-Image-1.png" />
+                        <img alt="Image" src="http://localhost/site1/wp-content/uploads/2025/01/Service-Image-1.png" />
                     </div>
                     <div class="col-md-6 col-12">
                         <p>Separated they live in Bookmarksgrove right at the coast of the
@@ -73,10 +73,10 @@ Semantics, a large language ocean.</p>
 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 <ul>
     <?php $vctr="/wp-content/uploads/2025/01/Vector-1.png" ?>
-    <li><img src="<?php echo site_url().$vctr; ?>" />Separated they live</li>
-    <li><img src="<?php echo site_url().$vctr; ?>" />The coast of the</li>
-    <li><img src="<?php echo site_url().$vctr; ?>" />Grove right at</li>
-    <li><img src="<?php echo site_url().$vctr; ?>" />Semantics, a large</li>
+    <li><img alt="Icon" src="<?php echo site_url().$vctr; ?>" />Separated they live</li>
+    <li><img alt="Icon" src="<?php echo site_url().$vctr; ?>" />The coast of the</li>
+    <li><img alt="Icon" src="<?php echo site_url().$vctr; ?>" />Grove right at</li>
+    <li><img alt="Icon" src="<?php echo site_url().$vctr; ?>" />Semantics, a large</li>
 </ul> 
 <div class="text-md-start text-center">    
 <button type="button" class="btn btn-primary site-button mt-5 ">Get Started</button>   
@@ -97,7 +97,7 @@ Semantics, a large language ocean.</p>
                 <div class="casestudy-carousel owl-carousel owl-theme">
     <div class="item bg-white">
         <div>
-            <img src="http://localhost/site1/wp-content/uploads/2025/01/Case-Study-1.png" />
+            <img alt="Icon" src="http://localhost/site1/wp-content/uploads/2025/01/Case-Study-1.png" />
             <div class="grouptext text-center px-2 py-3">
                 <h4 class="mb-2">Twice profit than before</h4>
                 <div>Sales, SEO, Visitor</div>
@@ -105,14 +105,14 @@ Semantics, a large language ocean.</p>
         </div>
     </div>
     <div class="item bg-white"><div>
-            <img src="http://localhost/site1/wp-content/uploads/2025/01/Case-Study-1.png" />
+            <img alt="Image" src="http://localhost/site1/wp-content/uploads/2025/01/Case-Study-1.png" />
             <div class="grouptext text-center px-2 py-3">
                 <h4 class="mb-2">Twice profit than before</h4>
                 <div>Sales, SEO, Visitor</div>
             </div>
         </div></div>
     <div class="item bg-white"><div>
-            <img src="http://localhost/site1/wp-content/uploads/2025/01/Case-Study-1.png" />
+            <img alt="Image" src="http://localhost/site1/wp-content/uploads/2025/01/Case-Study-1.png" />
             <div class="grouptext text-center px-2 py-3">
                 <h4 class="mb-2">Twice profit than before</h4>
                 <div>Sales, SEO, Visitor</div>
@@ -120,7 +120,7 @@ Semantics, a large language ocean.</p>
         </div></div>
     <div class="item bg-white">
         <div>
-            <img src="http://localhost/site1/wp-content/uploads/2025/01/Case-Study-1.png" />
+            <img alt="Image" src="http://localhost/site1/wp-content/uploads/2025/01/Case-Study-1.png" />
             <div class="grouptext text-center px-2 py-3">
                 <h4 class="mb-2">Twice profit than before</h4>
                 <div>Sales, SEO, Visitor</div>
