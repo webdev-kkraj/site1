@@ -58,7 +58,7 @@ get_header();
                     ?>
                     <a class="caseitem all <?php echo $filter_terms; ?>" href="<?php echo get_permalink(); ?>">
                     <div class=" bg-white ">
-                        <img src="<?php echo $image[0]; ?>" />
+                        <img alt="Image" src="<?php echo $image[0]; ?>" />
                         <div class="grouptext text-center px-2 py-3">
                             <h4 class="mb-2 fnt-lato"><?php echo get_the_title(); ?></h4>
                             <div><?php echo get_field('user_position',get_the_ID()); ?></div>
