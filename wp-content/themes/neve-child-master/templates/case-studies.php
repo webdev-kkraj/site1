@@ -70,25 +70,6 @@ get_header();
         </div>
     </div>
 </section>
-<script>
-    (function($) {
-    $(document).on('click','.filtercase ul li',function() {
-        var catflt = $(this).attr('data-filter');
-        var catname = $(this).attr('data-filtername');
-        $(".filtercase ul li").removeClass('flt-active');
-        $(this).addClass('flt-active');
-        $(".dyn-breadcrumb").remove();
-        if(typeof catflt !== 'undefined' && catflt !== '')
-        {
-            $(".caseitem").hide();
-            $("."+catflt).show();
-            $('.breadcrumbs').append("<a class='text-white fw-normal mr-1 d-inline dyn-breadcrumb'> / "+catname+"</a>");
-        } else {
-            $(".caseitem").show();
-        }
-    });
-})(jQuery);
-</script>
 <?php
 get_footer();
 ?>
