@@ -95,15 +95,33 @@ Semantics, a large language ocean.</p>
             <h2 class="fnt-40 fnt-lato fw-bold text-center mb-5 pb-5">Our Case Studies</h2>
             <div class="case-carousel mb-5">
                 <div class="casestudy-carousel owl-carousel owl-theme">
-    <div class="item bg-white">
-        <div>
-            <img alt="Icon" src="http://localhost/site1/wp-content/uploads/2025/01/Case-Study-1.png" />
-            <div class="grouptext text-center px-2 py-3">
-                <h4 class="mb-2">Twice profit than before</h4>
-                <div>Sales, SEO, Visitor</div>
-            </div>
-        </div>
-    </div>
+                 <?php 
+                    $args = array( 'post_type' => 'case_studies','posts_per_page' => '-1' ,'order' => 'asc' );
+	                $loop = new WP_Query( $args );
+                    while ( $loop->have_posts() ) : $loop->the_post();
+                    if (has_post_thumbnail( $post->ID )) 
+                    { 
+	                    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); 
+	                } 
+                    $filter_terms = '';
+                    $cterms = get_the_terms( $post->ID, 'category_industry');
+                    foreach ( $cterms as $trm ) {
+                        $filter_terms .= esc_html( $trm->slug )." ";
+                    }
+                    ?>
+                    <div class="item bg-white">
+                        <a class="nocolor" href="<?php echo get_permalink(); ?>">
+                            <div>
+                                <img alt="Icon" src="<?php echo $image[0]; ?>" />
+                                <div class="grouptext text-center px-2 py-3">
+                                    <h4 class="mb-2"><?php echo get_the_title(); ?></h4>
+                                    <div><?php echo get_field('user_position',get_the_ID()); ?></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <?php endwhile; wp_reset_query(); ?>   
+    
     <div class="item bg-white"><div>
             <img alt="Image" src="http://localhost/site1/wp-content/uploads/2025/01/Case-Study-1.png" />
             <div class="grouptext text-center px-2 py-3">
